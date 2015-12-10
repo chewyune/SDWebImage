@@ -387,7 +387,7 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
             
             // Do not force decoding animated GIFs
             if (!image.images) {
-                if (self.shouldDecompressImages) {
+                if (self.shouldDecompressImages && image) {
                     image = [UIImage decodedImageWithImage:image];
                 }
             }
