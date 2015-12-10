@@ -133,15 +133,15 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
                                                      name:UIApplicationDidReceiveMemoryWarningNotification
                                                    object:nil];
 
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(cleanDisk)
-                                                     name:UIApplicationWillTerminateNotification
-                                                   object:nil];
+        // [[NSNotificationCenter defaultCenter] addObserver:self
+        //                                          selector:@selector(cleanDisk)
+        //                                              name:UIApplicationWillTerminateNotification
+        //                                           object:nil];
 
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(backgroundCleanDisk)
-                                                     name:UIApplicationDidEnterBackgroundNotification
-                                                   object:nil];
+        // [[NSNotificationCenter defaultCenter] addObserver:self
+        //                                          selector:@selector(backgroundCleanDisk)
+        //                                              name:UIApplicationDidEnterBackgroundNotification
+        //                                           object:nil];
 #endif
     }
 
